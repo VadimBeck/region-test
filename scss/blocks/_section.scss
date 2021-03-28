@@ -1,0 +1,31 @@
+.section {
+  padding-bottom: 80px;
+
+  & > p {
+    font-size: 16px;
+    padding: 0 30px;
+    margin-bottom: 50px;
+    text-align: justify;
+  }
+
+  @include phones {
+    & > p {
+      padding: 0 10px;
+    }
+  }
+}
+
+.section__title {
+  font-family: "Museo Cyrl", sans-serif;
+  font-size: 38px;
+  margin-bottom: 30px;
+  text-align: center;
+
+  @include laptop {
+    font-size: 32px;
+  }
+}
+
+.section__title-inner {
+  color: $orange;
+}

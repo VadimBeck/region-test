@@ -1,0 +1,10 @@
+.price-list {
+  padding: 20px 0;
+}
+.price-list__item {
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

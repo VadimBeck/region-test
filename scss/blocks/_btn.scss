@@ -1,0 +1,21 @@
+.btn {
+  color: #fff;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: $mediumFont;
+  font-size: inherit;
+  outline: none;
+
+  &:hover {
+    box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.4);
+  }
+
+  &--info {
+    background-color: $blue;
+  }
+  &--accept {
+    background-color: $orange;
+  }
+}

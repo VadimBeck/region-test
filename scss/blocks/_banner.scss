@@ -1,0 +1,132 @@
+.banner {
+  padding: 30px 0 20px;
+  background-color: $orange;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner__content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+
+  @include laptop {
+    flex-direction: column;
+  }
+}
+
+.banner__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 0.4;
+  flex-shrink: 0;
+  padding: 0 25px;
+}
+
+.banner__title {
+  font-family: "Museo Cyrl", sans-serif;
+  font-weight: $boldFont;
+  font-size: 42px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.banner__controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+}
+
+.banner__btn {
+  padding: 15px 10px;
+  font-size: 16px;
+  flex: 0.7;
+  text-align: center;
+  display: inline-block;
+  font-weight: $boldFont;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  max-width: 300px;
+  white-space: nowrap;
+
+  &:hover {
+    box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.3);
+  }
+
+  &--info {
+    color: #fff;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  &--accept {
+    color: $orange;
+    border: 1px solid $orange;
+    background: #fff;
+  }
+}
+
+.banner__list {
+  display: flex;
+  flex: 0.6;
+  justify-content: center;
+
+  @include phones {
+    display: none;
+  }
+}
+
+.banner__item {
+  text-align: center;
+  position: relative;
+  padding: 0 20px;
+  flex: 1;
+
+  &::after {
+    content: "•";
+    display: block;
+    position: absolute;
+    width: 100%;
+    line-height: 0;
+    font-size: 45px;
+    top: 80px;
+    left: 50%;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+
+  @include laptop {
+    &::after {
+      top: 60px;
+    }
+  }
+}
+
+.banner__item-display {
+  font-family: "Museo Cyrl", sans-serif;
+  font-weight: $boldFont;
+  font-size: 120px;
+
+  & > span {
+    font-size: 32px;
+  }
+
+  @include laptop {
+    font-size: 80px;
+  }
+}
+
+.banner__item-desc {
+  font-size: 16px;
+  white-space: nowrap;
+
+  @include laptop {
+    font-size: 14px;
+    white-space: wrap;
+  }
+}

@@ -1,0 +1,31 @@
+.circle {
+  position: absolute;
+  width: 1200px;
+  height: 1200px;
+  border-radius: 50%;
+  background: #ff6f19;
+  left: 42%;
+  top: -140px;
+  transform: translateX(-150px);
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &::before {
+    width: 75%;
+    height: 75%;
+    background: #ff7e32;
+  }
+  &::after {
+    width: 50%;
+    height: 50%;
+    background: #ff8b46;
+  }
+}

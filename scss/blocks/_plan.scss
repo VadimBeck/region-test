@@ -1,0 +1,25 @@
+.plan {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding-bottom: 30px;
+}
+
+.plan__img {
+  min-height: 340px;
+  margin-bottom: 30px;
+
+  @include laptop {
+    min-height: 280px;
+  }
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.plan__controls {
+  text-align: center;
+}

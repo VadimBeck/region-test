@@ -1,0 +1,32 @@
+.graph-block {
+  background: $darkBlue;
+  padding: 20px;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include laptop {
+    font-size: 18px;
+    padding: 10px;
+  }
+  @include tablets {
+    font-size: 16px;
+    padding-bottom: 30px;
+  }
+}
+
+.graph-block__item {
+  flex: 1;
+}
+
+.graph-block__row {
+  display: flex;
+  margin-bottom: 15px;
+
+  @include phones {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}

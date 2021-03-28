@@ -1,0 +1,12 @@
+.title {
+  font-family: "Museo Cyrl", sans-serif;
+  font-size: 25px;
+  font-weight: $boldFont;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 1.2;
+
+  &--start {
+    text-align: left;
+  }
+}

@@ -1,0 +1,17 @@
+.scheme__img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+.scheme__img-pic {
+  width: 80%;
+}
+
+.scheme__text {
+  text-align: center;
+
+  & span {
+    font-weight: $boldFont;
+  }
+}
