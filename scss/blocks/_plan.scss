@@ -9,8 +9,8 @@
   min-height: 340px;
   margin-bottom: 30px;
 
-  @include laptop {
-    min-height: 280px;
+  @include desktop {
+    min-height: 0;
   }
 
   & img {
@@ -20,6 +20,14 @@
   }
 }
 
+.plan__text {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 .plan__controls {
   text-align: center;
+  margin-top: auto;
 }

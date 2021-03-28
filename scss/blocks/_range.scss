@@ -6,16 +6,14 @@
 }
 
 .range__img {
-  position: relative;
-  padding-bottom: 100%;
+  min-height: 320px;
   margin-bottom: 20px;
 
-  @include laptop {
-    padding-bottom: 70%;
+  @include desktop {
+    min-height: 0;
   }
 
   & img {
-    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -42,4 +40,5 @@
   color: $blue;
   font-weight: $boldFont;
   flex-shrink: 0;
+  text-align: end;
 }

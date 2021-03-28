@@ -18,10 +18,12 @@
 
   &:hover::before {
     background: rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease;
   }
   &:hover .option__btn,
   &:hover .option__desc {
     opacity: 1;
+    transition: opacity 0.3s ease;
   }
   &:hover .option__price {
     opacity: 0;
